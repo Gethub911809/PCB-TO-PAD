@@ -1,0 +1,97 @@
+* {
+    text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #f4f4f8;
+  background: #222;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 2px, transparent 2px);
+
+  background-size: 80px 80px;
+  animation: gridMove 2.5s linear infinite;
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes gridMove {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 80px 80px;
+  }
+}
+
+header {
+    margin: auto;
+    border: 2px solid rgba(255, 99, 99, 0.649);
+    display: flex;
+    padding: 0.50rem 0.80rem;
+    align-items: center;
+    box-sizing: border-box;
+    backdrop-filter: blur(5px) saturate(120%);
+    position: sticky;
+    top: 0;
+
+}
+
+#logobutton {
+    height: 10vh;
+    width: 30vh;
+}
+
+.headerPages {
+    backdrop-filter: blur(5px) saturate(120%);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.headerButton {
+    background: #00000025;
+    height: 7vh;
+    width: 20vh;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.headerButton[data-header-side="right"] {
+    margin: 0;
+}
+
+.container {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid rgba(255, 99, 99, 0.649);
+    height: 200vh;
+}
+
+h1{
+    font-size: 100px;
+    margin: 0;
+}
+
+#rocketText{
+    text-decoration: underline;
+    color: rgba(255, 99, 99, 0.649);
+}
