@@ -11,6 +11,7 @@ body {
   padding: 0;
   color: #f4f4f8;
   background: #222;
+  
 }
 
 body::before {
@@ -86,6 +87,12 @@ header {
     height: 200vh;
 }
 
+#frontPage{
+    margin: 5vh;
+    height: 85vh;
+    border: 2px solid rgba(255, 99, 99, 0.649);
+}
+
 h1{
     font-size: 100px;
     margin: 0;
@@ -93,5 +100,16 @@ h1{
 
 #rocketText{
     text-decoration: underline;
-    color: rgba(255, 99, 99, 0.649);
+    color: rgb(185, 79, 79);
+}
+
+#startButton{
+    margin:10vh;
+    height:15vh;
+    width:40vh;
+    border-radius: 10px;
+    background-color: rgb(184, 48, 48);
+    border: 2px solid rgba(30, 116, 130, 0.649);
+    font-size: medium;
+    color: white;
 }
